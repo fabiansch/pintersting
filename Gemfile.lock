@@ -67,6 +67,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.2)
+    oauth (0.4.7)
     orm_adapter (0.5.0)
     pg (0.17.0)
     polyglot (0.3.3)
@@ -137,6 +138,8 @@ DEPENDENCIES
   devise (~> 3.2.2)
   jbuilder (~> 1.2)
   jquery-rails
+  json (~> 1.8.1)
+  oauth (~> 0.4.7)
   pg
   rails (= 4.0.1)
   rails_12factor
