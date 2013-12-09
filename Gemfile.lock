@@ -52,6 +52,7 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -68,6 +69,15 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.2)
     oauth (0.4.7)
+    omniauth (1.1.4)
+      hashie (>= 1.2, < 3)
+      rack
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-xing (0.1.4)
+      multi_json
+      omniauth-oauth (~> 1.0.0)
     orm_adapter (0.5.0)
     pg (0.17.0)
     polyglot (0.3.3)
@@ -138,8 +148,8 @@ DEPENDENCIES
   devise (~> 3.2.2)
   jbuilder (~> 1.2)
   jquery-rails
-  json (~> 1.8.1)
-  oauth (~> 0.4.7)
+  omniauth-oauth (~> 1.0)
+  omniauth-xing
   pg
   rails (= 4.0.1)
   rails_12factor
