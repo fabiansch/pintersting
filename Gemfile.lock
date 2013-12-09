@@ -72,7 +72,7 @@ GEM
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
-    omniauth-oauth (1.0.1)
+    omniauth-oauth (1.0.0)
       oauth
       omniauth (~> 1.0)
     omniauth-xing (0.1.4)

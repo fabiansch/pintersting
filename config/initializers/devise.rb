@@ -254,7 +254,7 @@ Devise.setup do |config|
 
   require "omniauth-xing"
   #OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development? 
-  config.omniauth :xing, "APP_ID", "APP_SECRET"
+  config.omniauth :xing, "APP_ID", "APP_SECRET", :strategy_class => OmniAuth::Strategies::Xing
   # running on Heroku needs this without oppenSSL-line:
   # config.omniauth :xing, "APP_ID", "APP_SECRET",
   #    {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}} 
