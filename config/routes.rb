@@ -1,5 +1,9 @@
 Pinteresting::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  # dont't work because there is already a route so called
+  # devise_scope :user do
+  #   get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+  # end
   root 'pages#home'
   get 'about' => 'pages#about' # creates about_path
   
