@@ -11,6 +11,11 @@
 				<p><strong><%= @pin.user.name if @pin.user %></strong></p>
 				<p>Job: <%= @pin.user.job if @pin.user %></p>
 				<p>Ort: <%= @pin.user.location if @pin.user %></p>
+				<% if @pin.user.mood %>
+					<p>Gut drauf? - JA!</p>
+				<% else %>
+					<p>Gut drauf? - Nein..</p>
+				<% end %>
 
 				<% if @pin.user == current_user %>
           <%= link_to edit_pin_path(@pin) do %>

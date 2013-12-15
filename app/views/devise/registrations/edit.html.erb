@@ -22,8 +22,13 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :Ort %>
+        <%= f.label :ort %>
         <%= f.text_field :location, autofocus: true, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :gut_gelaunt_? %>
+        <%= f.check_box :mood %>
       </div>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
