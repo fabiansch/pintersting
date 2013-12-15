@@ -9,6 +9,9 @@
 			<div class="panel-body">
 				<p><%= @pin.description %></p>
 				<p><strong><%= @pin.user.name if @pin.user %></strong></p>
+				<p>Job: <%= @pin.user.job if @pin.user %></p>
+				<p>Ort: <%= @pin.user.location if @pin.user %></p>
+
 				<% if @pin.user == current_user %>
           <%= link_to edit_pin_path(@pin) do %>
             <span class="glyphicon glyphicon-edit"></span>
