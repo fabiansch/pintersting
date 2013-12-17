@@ -8,6 +8,11 @@ class PinsController < ApplicationController
   end
 
   def show
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml {render :xml => @pin}
+      format.json {render :json => @pin}
+    end
   end
 
   def new

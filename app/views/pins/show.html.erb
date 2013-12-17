@@ -11,6 +11,7 @@
 				<p><strong><%= @pin.user.name if @pin.user %></strong></p>
 				<p>Job: <%= @pin.user.job if @pin.user %></p>
 				<p>Ort: <%= @pin.user.location if @pin.user %></p>
+				<p>About me: <%= @pin.user.aboutme if @pin.user %></p>
 				<% if @pin.user.mood %>
 					<p>Gut drauf? - JA!</p>
 				<% else %>
