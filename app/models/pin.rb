@@ -6,7 +6,6 @@ class Pin < ActiveRecord::Base
 	validates :image, presence: true
 	validates :description, presence: true
 
-	validates_attachment :image, content_type: { content_type: /\Aimage\/.*\Z/ }
-
+	validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
 end
